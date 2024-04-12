@@ -1,13 +1,25 @@
 package br.com.carstore.model;
 
 public class Car {
-    private String nome;
 
-    public Car(String nome) {
-        this.nome = nome;
+    private String id;
+    private String name;
+
+    public Car(String name) {
+        this.name = name;
     }
 
-    public String getNome() {
-        return nome;
+    public Car(String id, String name) {
+        this.id = id;
+        this.name = name;
     }
+
+    public String getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
 }
